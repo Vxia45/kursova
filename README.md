@@ -48,10 +48,13 @@ $host = getenv('DB_HOST') ?: "db";
 1. Клонирайте проекта и отворете терминала в главната му папка.
 2. Стартирайте услугите във фонов режим чрез Docker Compose:
    ```bash
-   docker compose up -d
+   sudo docker compose up -d
    ```
 3. При първоначално стартиране базата данни се инициализира автоматично чрез скрипта в `db_init/`.
-4. Достъпете форума през браузъра си на адрес:
+   ```bash
+   sudo docker exec -i kursova-db-1 mysql -u root -proot_password_1234 kursova < db_init/init.sql
+   ```
+5. Достъпете форума през браузъра си на адрес:
    ```text
    http://localhost:8080/src/index.php
    ```
