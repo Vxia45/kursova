@@ -1,0 +1,11 @@
+.git
+.gitignore
+.dockerignore
+compose.yml
+docker-compose.yml
+db_init/
+mysql_data/
+README.md
+kursova.sql
+.idea/
+.vscode/
