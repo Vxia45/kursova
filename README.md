@@ -65,5 +65,5 @@ $host = getenv('DB_HOST') ?: "db";
 
 За да спрете работещите контейнери и да освободите системните ресурси, изпълнете:
 ```bash
-docker compose down
+sudo docker compose down
 ```
